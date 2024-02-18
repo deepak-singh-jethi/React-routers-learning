@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Root from "./pages/Root";
 import Error from "./pages/Error/Error.js";
+import ProductDetail from "./pages/productContainer/ProductDetail.js";
 
 /* //! old method of defining routes
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <Products />,
+      },
+      {
+        path: "/products/:productId",
+        element: <ProductDetail />,
       },
     ],
   },
