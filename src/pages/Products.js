@@ -16,7 +16,9 @@ function Products() {
         {PRODUCTS.map((prod) => {
           return (
             <li key={prod.id}>
-              <Link to={`/products/${prod.id}`}>{prod.name}</Link>
+              <Link to={`${prod.id}`} relative="route">
+                {prod.name}
+              </Link>
             </li>
           );
         })}

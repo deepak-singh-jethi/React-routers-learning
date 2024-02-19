@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
   function navigateHandler() {
-    navigate("/products");
+    navigate("products");
   }
 
   return (
